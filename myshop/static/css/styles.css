@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+}
+h1 {
+    color: #333;
+}
+/* CSS para la lista de productos */
+.product-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.product-list li {
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding: 15px;
+    overflow: hidden;
+}
+
+.product-list h2 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.product-list img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product-list p {
+    margin-bottom: 10px;
+}
+
+.product-list .price {
+    font-weight: bold;
+    color: #333;
+}
+/* CSS para la página de detalles del producto */
+.product-detail {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.product-detail h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.product-detail img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.product-detail .description {
+    margin-bottom: 20px;
+}
+
+.product-detail .price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+}
+
+.product-detail .add-to-cart {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.product-detail .add-to-cart:hover {
+    background-color: #45a049;
+}
+/* Estilos básicos para la lista de productos */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+

@@ -1,0 +1,18 @@
+<!-- HTML con clases de estilos para detalle del producto -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Detalles del Producto</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <div class="product-detail">
+        <h1>{{ product.name }}</h1>
+        <img src="{{ product.image.url }}" alt="{{ product.name }}">
+        <p class="description">{{ product.description }}</p>
+        <p class="price">Precio: ${{ product.price }}</p>
+        <a href="#" class="add-to-cart">Agregar al Carrito</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!-- HTML con clases de estilos para lista de productos -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Productos</title>
+    {% load static %}>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <h1>Productos Disponibles</h1>
+    <ul class="product-list">
+        {% for product in products %}
+        <li>
+            <h2>{{ product.name }}</h2>
+            <img src="{{ product.image.url }}" alt="{{ product.name }}">
+            <p>{{ product.description }}</p>
+            <p class="price">Precio: ${{ product.price }}</p>
+            <a href="{% url 'shop:product_detail' product.slug %}">Ver Detalles</a>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
